@@ -13,3 +13,19 @@ body {
     color-scheme: dark;
   }
 }
+
+.navigation {
+  @apply bg-gray-100 dark:bg-gray-900 p-4;
+}
+
+.navigation ul {
+  @apply flex gap-4 justify-center;
+}
+
+.navigation a {
+  @apply text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors;
+}
+
+.navigation a.active {
+  @apply text-gray-900 dark:text-gray-100 font-medium;
+}
